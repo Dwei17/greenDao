@@ -110,7 +110,7 @@
     @Entity
     public class BlackBoxEntity {
         @Id
-        private long id;
+        private Long id;
 
         @Convert(converter = BlackBoxEntityConvert.class, columnType = String.class)
         private List<List<DsBean>> dsLists; // 解析后的数据
